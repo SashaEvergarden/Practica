@@ -14,7 +14,6 @@ function cargarEventListeners() {
 
 
 function comprarCatalogo(e) {
-     e.preventDefault();
 
      if(e.target.classList.contains('agregar-carrito')){
           const catalogo = e.target.parentElement.parentElement;
@@ -50,7 +49,6 @@ function insertarCarrito(catalogo) {
 }
 
 function eliminarCatalogo(e) {
-     e.preventDefault();
 
      let catalogo,
           catalogoId;
